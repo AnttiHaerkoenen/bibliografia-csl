@@ -163,7 +163,6 @@
           <else>
             <group delimiter=" ">
               <text variable="URL" prefix="&lt;" suffix="&gt;."/>
-              <text term="retrieved" text-case="capitalize-first" suffix=" "/>
               <group>
                 <date variable="accessed" form="numeric"/>
               </group>
