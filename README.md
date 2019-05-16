@@ -6,6 +6,7 @@
    (esim. [Zotero](https://www.zotero.org/)).
 
 #### Viittausjärjestelmätiedostot
-Nimi                | Tiedosto 
---------------------|----------
-Aikakauskirja Lähde | lahde.csl
+
+Nimi                | Tiedosto   | Perustuu
+--------------------|------------|------------------------------------------------------------
+Aikakauskirja Lähde | lahde.csl  | 	http://www.zotero.org/styles/currents-in-biblical-research
