@@ -225,9 +225,33 @@
   </macro>
   <macro name="locators">
     <choose>
-      <if type="article-journal">
-        <text variable="issue"  prefix=" " suffix="/"/>
-        <text variable="volume"/>
+      <if type="article-journal article-magazine">
+        <group delimiter=", " prefix=" ">
+          <choose>
+            <if variable="volume issue" match="all">
+              <group>
+                <text variable="issue" suffix="/"/>
+                <text variable="volume"/>
+              </group>
+            </if>
+            <else-if variable="issue issued" match="all">
+              <group>
+                <text variable="issue" suffix="/"/>
+                <date variable="issued">
+                  <date-part variable="year"/>
+                </date>
+              </group>
+            </else-if>
+            <else-if variable="volume" match="all">
+              <text variable="volume"/>
+            </else-if>
+          </choose>
+          <choose>
+            <if variable="page">
+              <text variable="page"/>
+            </if>
+          </choose>
+        </group>
       </if>
       <else-if type="legal_case">
         <text variable="volume" prefix=", "/>
@@ -422,7 +446,7 @@
       </group>
     </layout>
   </citation>
-  <bibliography et-al-min="11" et-al-use-first="5" subsequent-author-substitute="" entry-spacing="1.5">
+  <bibliography et-al-min="11" et-al-use-first="5" subsequent-author-substitute="" entry-spacing="1.5" hanging-indent="false">
     <sort>
       <key macro="contributors"/>
       <key variable="issued"/>
