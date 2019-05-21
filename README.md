@@ -9,14 +9,15 @@ _HUOM!_ Aivan kaikkia viittausten vaatimuksia ei näillä tiedostoilla voi saada
 
 _Käyttö omalla vastuulla!_
 
-#### Viittausjärjestelmätiedostot
+### Viittausjärjestelmätiedostot
 
-Nimi                | Tiedosto      | Perustuu
---------------------|---------------|------------------------------------------------------------
-Aikakauskirja Lähde | lahde.csl     | http://www.zotero.org/styles/currents-in-biblical-research
-Terra               | terra.csl     | https://www.zotero.org/styles/glossa
+Nimi                            | Tiedosto         | Perustuu
+--------------------------------|------------------|------------------------------------------------------------
+Aikakauskirja Lähde             | lahde.csl        | http://www.zotero.org/styles/currents-in-biblical-research
+Graduttaja (UEF/Historia)       | graduttaja.csl   | http://www.zotero.org/styles/currents-in-biblical-research
+Terra                           | terra.csl        | https://www.zotero.org/styles/glossa
 
-#### Käyttö
+### Käyttö
 
 CSL-tiedosto otetaan käyttöön Zoterossa seuraavasti:
 
@@ -26,6 +27,13 @@ anna sen tiedostopäätteeksi .csl. (Huom. Windows saattaa yrittaa tehdä siitä
 3. Klikkaa _Manage styles_ ja paina _+_-painiketta.
 4. Etsi tietokoneelta csl-tiedosto ja valitse se. Klikkaa OK. Nyt Haluamasi tyylin pitäisi ilmestyä tyylivalikkoon.
 
-#### Palaute
+### Palaute
 
 Parannausehdotuksia ja muuta palautetta otetaan vastaan Githubin kautta.
+
+### Muutokset
+
+##### 2019-05-21
+
+* erotettu lahde.csl ja graduttaja.csl omiksi tiedostoikseen
+* lahde.csl kursivoi teoksen nimen oikein
